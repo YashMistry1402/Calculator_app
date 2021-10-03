@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cs.calculator.MainActivity">
+
+    <EditText
+        android:id="@+id/tffirst"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter First Number"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <EditText
+        android:id="@+id/tfsecond"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="116dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/tffirst"
+        android:layout_alignLeft="@+id/tffirst"
+        android:layout_alignStart="@+id/tffirst" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="198dp"
+        android:layout_below="@+id/tfsecond"
+        android:layout_alignLeft="@+id/tfsecond"
+        android:layout_alignStart="@+id/tfsecond"
+        android:layout_marginTop="68dp" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="-"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="198dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_toLeftOf="@+id/div"
+        android:layout_toStartOf="@+id/div" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="/"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="198dp"
+        android:layout_alignBaseline="@+id/sub"
+        android:layout_alignBottom="@+id/sub"
+        android:layout_toLeftOf="@+id/mul"
+        android:layout_toStartOf="@+id/mul"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="*"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="198dp"
+        android:layout_alignBaseline="@+id/div"
+        android:layout_alignBottom="@+id/div"
+        android:layout_alignRight="@+id/tfsecond"
+        android:layout_alignEnd="@+id/tfsecond" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="297dp"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/add"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add" />
+
+</RelativeLayout>
